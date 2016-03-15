@@ -1,0 +1,16 @@
+<div class = 'dashed-div main-container-left'>
+
+    <div class ='dashed-div article-div' ng-repeat="shortPost in shortPosts">
+
+        <div class='article-title'>{{shortPost.title}}
+            <div class='article-icon article-favourite'></div> 
+        </div>       
+
+        <p class='article-date'>{{shortPost.date.date}}</p>
+
+        <img class='article-user-picture' src='{{shortPost.author.userpicSrc}}'>
+
+        <p class='article-text'>{{shortPost.fullText}} <a href='#/posts/{{shortPost.id}}'>читать далее</a></p>
+
+    </div>
+</div>    

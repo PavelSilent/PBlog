@@ -1,0 +1,124 @@
+.header-container
+{
+	width: 1024px;
+	height: 180px;
+	margin-top: 30px;
+
+	background-color: white;
+
+	/*outline: 1px solid black;*/
+
+	border: 2px solid rgb(21, 113, 185);
+	
+
+	border-radius: 10px 10px 0px 0px;
+}
+
+.header-title-container
+{
+	display: inline-block;
+  	vertical-align: middle;
+	margin-top: 50px;
+
+	width: 1024px;
+	height: 80px;
+	background-color: white;
+}
+
+.header-img
+{
+	display: inline-block;
+	vertical-align: middle;
+
+	float: left;
+	white-space: nowrap;
+
+	width: 150px;
+	height: 150px;
+
+	margin-left: 60px;
+	margin-right: 10px;
+	margin-top: -36px;
+	background-color: white;
+
+
+	background-image: url('../assets/img/logo.gif');
+	background-size: 150px;
+}
+
+.header-title
+{
+	display: inline-block;
+	vertical-align: middle;  	
+  	float: left;
+	
+	
+	width: 800px;
+	color: rgb(22, 87, 142);
+}
+
+.header-links
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 220px;
+
+	float: left;
+}
+.header-links > a, .search-link
+{
+	padding: 7px;
+	margin-right: 2px;
+	text-decoration: none;
+	color: rgb(21, 113, 185);
+}
+
+.header-links a:hover, .search-link:hover
+{
+	outline: 2px dotted rgb(22, 87, 142);
+	text-decoration: none;
+	color: rgb(21, 113, 185);
+	cursor: pointer;
+}
+
+.active_header_link, .search-checkbox:checked ~ .search-link
+{
+	outline: 2px solid rgb(22, 87, 142);
+	text-decoration: none;
+	color: rgb(21, 113, 185);
+	font-weight: bold;
+
+}
+
+.search-div
+{
+  display: none;
+  padding-left: 10px;
+	
+}
+
+
+.search-checkbox
+{
+	display: none;	
+}
+
+.search-checkbox:checked ~ .search-div 
+{
+	
+	display: inline-block;
+}
+
+.search-input
+{
+	
+	height: 18px;
+	border: none;
+	width: 170px;
+
+
+	outline: 2px solid rgb(22, 87, 142);
+	
+	
+	
+}

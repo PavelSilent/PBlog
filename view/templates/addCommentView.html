@@ -1,0 +1,33 @@
+<div class="addCommentButton" 
+	ng-hide="isCommentContainerVisible" 
+	ng-click="showCommentContainer($event)" 
+	click-outside="hideCommentContainer()">
+		Добавить комментарий
+</div>
+
+<form name="addCommentForm" class="commentView" ng-show="isCommentContainerVisible" novalidate>
+    
+	<div class="inputDiv">
+
+	    <input name="authorInput" class="addCommentAuthor" placeholder="Автор" type="text"
+	    	click-outside="hideCommentContainer()"
+	    	ng-model="newCommentAuthor" required>
+
+	 	<span class="inputErrorSpan" ng-show="addCommentForm.authorInput.$error.required">Укажите автора комментария!</span>    	
+
+	</div>
+
+	<div class="inputDiv">
+
+	    <textarea name="commentTextInput" class="addCommentText" placeholder="Текст комментария" 
+	    	rows="10" cols="45"
+	    	click-outside="hideCommentContainer()"
+	    	ng-model="newCommentText" required></textarea>
+
+		<span class="inputErrorSpan" ng-show="addCommentForm.commentTextInput.$error.required">Укажите текст комментария!</span>    	
+
+	</div>
+
+     <input type="submit" class="addCommentButton" ng-disabled="addCommentForm. $invalid" ng-click="addComment()"
+     	click-outside="hideCommentContainer()">
+</form>

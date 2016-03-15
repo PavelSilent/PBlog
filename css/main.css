@@ -1,0 +1,283 @@
+.dashed-div
+{
+	/*border: 2px dashed black;*/
+	/*outline-style: dashed;
+	outline-color: grey;
+	outline-width: 2px;*/
+}
+
+.body-container
+{
+	width: 1024px;
+	margin: 0 auto;
+	background-image: url('../assets/img/snow.jpg');
+}
+
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+}
+
+.main-container
+{
+	width: 1024px;
+	min-height:400px;
+    height:auto;
+    overflow: hidden; 
+
+
+	margin: 0 auto;
+
+	background-color: white;
+
+	border-left: 2px solid rgb(21, 113, 185);
+	border-right: 2px solid rgb(21, 113, 185);
+	
+}
+
+.main-container-left
+{
+	display: inline-block;
+	width: 1024px;
+	height: 100%;
+	float: left;
+}
+
+.article-div
+{
+	width: 1004px;
+	padding-top: 10px;
+	padding-left: 20px;
+
+	vertical-align: middle;
+}
+
+.article-title
+{
+	display: inline-block;
+	color:rgb(22, 87, 142);
+	font-weight: bold;
+	margin: 5px 0px;
+
+}
+
+.article-icon
+{
+	display: inline-block;
+	width: 16px;
+	height: 16px;	
+	background-size: 16px;
+}
+
+.article-favourite
+{
+	background-image: url('../assets/img/favourite_true.png');	
+}
+
+.article-not-favourite
+{
+	background-image: url('../assets/img/favourite_false.png');
+}
+
+.article-not-favourite:hover
+{
+	background-image: url('../assets/img/favourite_true.png');
+}
+
+.article-favourite:hover
+{
+	background-image: url('../assets/img/favourite_false.png');
+}
+
+
+.article-date
+{
+	color: rgb(21, 113, 185);
+	font-style: italic;
+	margin: 5px 0px;
+
+}
+
+.article-user-picture
+{
+	
+	border: 2px solid rgb(22, 87, 142);
+	float: left;
+
+	width: 77px;
+	height: 77px;
+	
+}
+
+.article-text
+{
+
+	display: inline-block;
+	width: 850px;
+	height: 100px;
+	padding-left: 20px;
+	margin: 0;
+	text-indent: 30px;
+	word-wrap: break-word;
+}
+
+.article-comments
+{
+	padding-left: 100px;
+	padding-right: 50px;
+	padding-top: 10px;
+	
+}
+
+.article-comment
+{
+	padding-top: 10px;
+	border-top: 1px solid grey;
+	vertical-align: top;
+	min-height: 60px;
+}
+
+.article-commentator-user-picture
+{	
+	border: 2px solid rgb(22, 87, 142);
+	width: 44px;
+	height: 44px;
+	
+	float: left;
+
+	margin-right: 10px;
+	
+}
+
+.commentator-name
+{
+color: rgb(21, 113, 185);
+	font-style: italic;
+
+	padding-left: 20px;
+	margin: 0px;
+}
+
+.comment-text
+{
+	padding-left: 20px;
+	margin: 0px;
+	text-indent: 30px;
+}
+
+.comment-date
+{
+	padding-left: 20px;
+	margin: 0px;
+}
+
+.addCommentButton
+{
+	margin-left: 100px;
+	margin-bottom: 10px;
+
+	text-align: center;
+	vertical-align: top;
+	padding: 3px;
+	width: 170px;
+
+	border: 1px solid rgb(21, 113, 185);
+	background-color: rgb(22, 87, 142);
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgb(22, 87, 142);
+
+	color: white;
+
+	font-size: 12px;
+	
+	font-family:Helvetica;
+	cursor: pointer;
+
+	display: block;
+	clear: both;
+}
+
+.addCommentButton:focus
+{
+	outline: none;
+}
+
+.addCommentView
+{
+	margin-left: 100px;
+	margin-bottom: 10px;
+	cursor: pointer;
+
+}
+
+.addCommentAuthor
+{
+	margin-left: 100px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+	width: 200px;
+
+	text-indent: 10px;
+	border: 2px solid rgb(22, 87, 142);
+	border-radius: 8px;
+
+	font-family:Helvetica;
+	
+	float: left;
+}
+
+.addCommentAuthor:focus	
+{
+	outline: none;	
+}
+
+.addCommentText
+{
+	margin-left: 100px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+	width: 400px;
+	height: 60px;
+
+	text-indent: 5px;
+	border: 2px solid rgb(22, 87, 142);
+	border-radius: 8px;
+	
+	overflow:hidden;
+	resize:none;
+
+	font-family:Helvetica;
+
+	float: left;
+}
+
+.addCommentText:focus
+{
+	outline: none;
+}
+
+.inputDiv
+{
+	clear: both;
+}
+
+.inputErrorSpan
+{
+	display: inline-block;
+	color: rgb(200,0,31);
+	text-indent: 5px;
+	font-size: 13px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<div class ='dashed-div article-div'>
+
+    <div class='article-title'>{{post.title}}
+        <div class='article-icon article-favourite'></div> <!-- -->
+    </div>       
+
+    <p class='article-date'>{{post.date.date}}, {{post.date.time}}</p>
+
+    <img class='article-user-picture' src="{{post.author.userpicSrc}}">
+
+    <p class='article-text'>{{post.fullText}}</p>
+
+    <div class='article-comments' ng-model="comments">
+
+        <div pb-comment='comment' ng-repeat="comment in comments"></div>
+
+    </div>
+
+    <div pb-add-comment></div>
+</div>
