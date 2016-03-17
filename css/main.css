@@ -92,7 +92,6 @@
 	background-image: url('../assets/img/favourite_false.png');
 }
 
-
 .article-date
 {
 	color: rgb(21, 113, 185);
@@ -103,18 +102,13 @@
 
 .article-user-picture
 {
-	
-	border: 2px solid rgb(22, 87, 142);
 	float: left;
-
 	width: 77px;
 	height: 77px;
-	
 }
 
 .article-text
 {
-
 	display: inline-block;
 	width: 850px;
 	height: 100px;
@@ -142,7 +136,6 @@
 
 .article-commentator-user-picture
 {	
-	border: 2px solid rgb(22, 87, 142);
 	width: 44px;
 	height: 44px;
 	
@@ -154,7 +147,7 @@
 
 .commentator-name
 {
-color: rgb(21, 113, 185);
+	color: rgb(21, 113, 185);
 	font-style: italic;
 
 	padding-left: 20px;
@@ -174,96 +167,85 @@ color: rgb(21, 113, 185);
 	margin: 0px;
 }
 
-.addCommentButton
+.emptyDiv
 {
-	margin-left: 100px;
-	margin-bottom: 10px;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}
 
+.simpleButton
+{
+	display: inline-block;
+	clear: both;
+
+	margin: 10px 0px;
+	padding: 3px 15px 5px;
+	cursor: pointer;
+}
+
+.simpleButton:focus
+{
+	outline: none;
+}
+
+.deepBlueButton
+{
 	text-align: center;
 	vertical-align: top;
-	padding: 3px;
-	width: 170px;
+
+	background-color: rgb(22, 87, 142);
 
 	border: 1px solid rgb(21, 113, 185);
-	background-color: rgb(22, 87, 142);
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgb(22, 87, 142);
 
 	color: white;
-
 	font-size: 12px;
-	
 	font-family:Helvetica;
-	cursor: pointer;
-
-	display: block;
-	clear: both;
 }
 
-.addCommentButton:focus
+.simpleInputField
+{
+	display: inline-block;
+	text-indent: 10px;
+
+	font-family:Helvetica;
+	overflow:hidden;
+	resize:none;
+}
+
+.simpleInputField:focus
 {
 	outline: none;
 }
 
-.addCommentView
+.deepBlueBorder
 {
-	margin-left: 100px;
-	margin-bottom: 10px;
-	cursor: pointer;
+	border: 2px solid rgb(22, 87, 142);
+}
 
+.darkRedBorder
+{
+	 border: 2px solid rgb(200,0,31);
+}
+
+.roundBorder
+{
+	border-radius: 8px;
 }
 
 .addCommentAuthor
 {
-	margin-left: 100px;
-	margin-bottom: 10px;
-	display: inline-block;
-
-	width: 200px;
-
-	text-indent: 10px;
-	border: 2px solid rgb(22, 87, 142);
-	border-radius: 8px;
-
-	font-family:Helvetica;
-	
 	float: left;
-}
-
-.addCommentAuthor:focus	
-{
-	outline: none;	
+	width: 200px;
 }
 
 .addCommentText
 {
-	margin-left: 100px;
-	margin-bottom: 10px;
-	display: inline-block;
-
-	width: 400px;
-	height: 60px;
-
-	text-indent: 5px;
-	border: 2px solid rgb(22, 87, 142);
-	border-radius: 8px;
-	
-	overflow:hidden;
-	resize:none;
-
-	font-family:Helvetica;
-
 	float: left;
-}
-
-.addCommentText:focus
-{
-	outline: none;
-}
-
-.inputDiv
-{
-	clear: both;
+	width: 400px;
+	height: 60px;	
 }
 
 .inputErrorSpan
@@ -276,8 +258,47 @@ color: rgb(21, 113, 185);
 	text-decoration: underline;
 }
 
+.spacer10
+{
+	margin-bottom: 10px;
+}
+
+.addPostButton
+{
+	float: right;
+	margin-right: 10px;
+}
 
 
+.addPostFormView
+{
+	padding: 20px;
+}
 
+.simpleFormView
+{
+}
+
+.simpleFormView  .ng-invalid{
+  border: 2px solid rgb(200,0,31);
+}
+
+.addPostAuthor
+{
+	float: left;
+	width: 200px;	
+}
+
+.addPostSubject
+{
+	float: left;
+	width: 100%;
+}
+
+.addPostData
+{
+	float: left;
+	width: 100%;
+}
 
 

@@ -11,5 +11,11 @@ blogApp.controller
 	            $scope.shortPosts = data;
     		}
     	);
+
+		$scope.redirect2AddPost = function ()
+		{
+		    window.location.href = "#/addPost";
+		};
+
 	}
 );

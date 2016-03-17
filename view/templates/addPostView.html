@@ -1,0 +1,38 @@
+<form name="addPostForm" class="simpleFormView addPostFormView" novalidate>
+    
+	<div class="emptyDiv">
+
+	    <input name="authorInput" class="simpleInputField deepBlueBorder roundBorder addPostAuthor" placeholder="Автор" type="text" ng-model="newPostAuthor" required>
+
+	 	<span class="inputErrorSpan" ng-show="addPostForm.authorInput.$error.required">Укажите автора записи!</span>    	
+
+	</div>
+
+	<div class="emptyDiv spacer10"></div>
+
+	<div class="emptyDiv">
+
+	    <input name="postSubjectInput" class="simpleInputField deepBlueBorder roundBorder addPostSubject" placeholder="Тема" rows="10" cols="45" ng-model="newPostSubject" required>
+
+		<span class="inputErrorSpan" ng-show="addPostForm.postSubjectInput.$error.required">Укажите тему записи!</span>    	
+
+	</div>
+
+	<div class="emptyDiv spacer10"></div>
+
+	<div class="emptyDiv">
+
+	    <textarea name="postTextInput" class="simpleInputField deepBlueBorder roundBorder addPostData" placeholder="Начните вводить новую запись..." rows="10" cols="45" ng-model="newPostData" required></textarea>
+
+		<span class="inputErrorSpan" ng-show="addPostForm.postTextInput.$error.required">Укажите текст записи!</span>    	
+
+	</div>
+
+	<div class="emptyDiv">
+		<input type="submit" class="simpleButton deepBlueButton" ng-disabled="addPostForm. $invalid" ng-click="savePost()"
+     </div>
+
+</form>
+
+
+<h1>dddd333</h1>

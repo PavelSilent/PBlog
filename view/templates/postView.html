@@ -6,7 +6,7 @@
 
     <p class='article-date'>{{post.date.date}}, {{post.date.time}}</p>
 
-    <img class='article-user-picture' src="{{post.author.userpicSrc}}">
+    <img class='article-user-picture deepBlueBorder' src="{{post.author.userpicSrc}}">
 
     <p class='article-text'>{{post.fullText}}</p>
 
@@ -14,7 +14,9 @@
 
         <div pb-comment='comment' ng-repeat="comment in comments"></div>
 
+        <div pb-add-comment></div>
+
     </div>
 
-    <div pb-add-comment></div>
+    
 </div>
