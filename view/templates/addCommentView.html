@@ -1,15 +1,15 @@
-<div class="addCommentButton" 
+<div class="simpleButton deepBlueButton" 
 	ng-hide="isCommentContainerVisible" 
 	ng-click="showCommentContainer($event)" 
 	click-outside="hideCommentContainer()">
 		Добавить комментарий
 </div>
 
-<form name="addCommentForm" class="commentView" ng-show="isCommentContainerVisible" novalidate>
+<form name="addCommentForm" class="simpleFormView" ng-show="isCommentContainerVisible" novalidate>
     
-	<div class="inputDiv">
+	<div class="emptyDiv">
 
-	    <input name="authorInput" class="addCommentAuthor" placeholder="Автор" type="text"
+	    <input name="authorInput" class="simpleInputField deepBlueBorder roundBorder addCommentAuthor" placeholder="Автор" type="text"
 	    	click-outside="hideCommentContainer()"
 	    	ng-model="newCommentAuthor" required>
 
@@ -17,9 +17,11 @@
 
 	</div>
 
-	<div class="inputDiv">
+	<div class="emptyDiv spacer10"></div>
 
-	    <textarea name="commentTextInput" class="addCommentText" placeholder="Текст комментария" 
+	<div class="emptyDiv">
+
+	    <textarea name="commentTextInput" class="simpleInputField deepBlueBorder roundBorder addCommentText" placeholder="Текст комментария" 
 	    	rows="10" cols="45"
 	    	click-outside="hideCommentContainer()"
 	    	ng-model="newCommentText" required></textarea>
@@ -28,6 +30,10 @@
 
 	</div>
 
-     <input type="submit" class="addCommentButton" ng-disabled="addCommentForm. $invalid" ng-click="addComment()"
+	<div class="emptyDiv">
+
+     <input type="submit" class="simpleButton deepBlueButton" ng-disabled="addCommentForm. $invalid" ng-click="addComment()"
      	click-outside="hideCommentContainer()">
+
+     </div>
 </form>

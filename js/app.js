@@ -13,7 +13,11 @@ app.config(
 					templateUrl: 'view/templates/postView.html',
 					controller: 'postController'
 				})
-
+			.when('/addPost',
+				{
+					templateUrl: 'view/templates/addPostView.html',
+					controller: 'postsController'
+				})
 			.when('/favourites',	{ templateUrl: 'view/favourites.html'})
 			.when('/excerption',	{ templateUrl: 'view/excerption.html'})
 			.when('/links',			{ templateUrl: 'view/links.html'})

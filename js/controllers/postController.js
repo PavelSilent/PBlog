@@ -11,7 +11,7 @@ blogApp.controller
 			function(data) 
 			{
 	            var postId = Number($routeParams.postId);
-				console.log('postId: ' + postId);
+				//console.log('postId: ' + postId);
 	            for (var i = 0; i < data.length; i++)
 	            {
 	            	var post = data[i];
