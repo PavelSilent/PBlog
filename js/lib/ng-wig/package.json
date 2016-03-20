@@ -1,0 +1,78 @@
+{
+  "name": "ng-wig",
+  "version": "2.3.4",
+  "author": {
+    "name": "Stepan Suvorov"
+  },
+  "contributors": [
+    {
+      "name": "Besuhoff",
+      "url": "https://github.com/besuhoff"
+    },
+    {
+      "name": "Pavel Lebedinsky",
+      "url": "https://github.com/bolelamx"
+    },
+    {
+      "name": "Sascha Weniger",
+      "url": "https://github.com/sashless"
+    },
+    {
+      "name": "Volodymyr Dziubak",
+      "url": "https://github.com/Velzevul"
+    }
+  ],
+  "devDependencies": {
+    "bower": "~1.3.3",
+    "express": "~3.4.8",
+    "grunt": "~0.4.2",
+    "grunt-bump": "^0.3.1",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-express": "~1.2.1",
+    "grunt-grunticon": "^1.2.3",
+    "grunt-html2js": "~0.2.4",
+    "grunt-ng-annotate": "~0.3.0",
+    "load-grunt-tasks": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.14.0"
+  },
+  "main": "dist/ng-wig.min.js",
+  "repository": {
+    "git": "https://github.com/stevermeister/ngWig"
+  },
+  "scripts": {
+    "start": "grunt start",
+    "devSetup": "bower install && ./node_modules/.bin/grunt install"
+  },
+  "license": "MIT",
+  "gitHead": "ed106aca14ff5a929d131b01ec8ddd5e3e438101",
+  "description": "ngWig =====",
+  "_id": "ng-wig@2.3.4",
+  "_shasum": "e361c7da3633645ad7a7b04fd5b1099238eefde8",
+  "_from": "ng-wig@latest",
+  "_npmVersion": "3.4.1",
+  "_nodeVersion": "5.1.0",
+  "_npmUser": {
+    "name": "stevermeister",
+    "email": "stevermeister@gmail.com"
+  },
+  "dist": {
+    "shasum": "e361c7da3633645ad7a7b04fd5b1099238eefde8",
+    "tarball": "http://registry.npmjs.org/ng-wig/-/ng-wig-2.3.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "stevermeister",
+      "email": "stevermeister@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-5-east.internal.npmjs.com",
+    "tmp": "tmp/ng-wig-2.3.4.tgz_1454937736504_0.3634148680139333"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/ng-wig/-/ng-wig-2.3.4.tgz"
+}

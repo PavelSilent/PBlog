@@ -13,7 +13,8 @@
 	    	click-outside="hideCommentContainer()"
 	    	ng-model="newCommentAuthor" required>
 
-	 	<span class="inputErrorSpan" ng-show="addCommentForm.authorInput.$error.required">Укажите автора комментария!</span>    	
+	 	<img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addCommentForm.authorInput.$error.required">	
+		<img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addCommentForm.authorInput.$error.required">
 
 	</div>
 
@@ -26,7 +27,8 @@
 	    	click-outside="hideCommentContainer()"
 	    	ng-model="newCommentText" required></textarea>
 
-		<span class="inputErrorSpan" ng-show="addCommentForm.commentTextInput.$error.required">Укажите текст комментария!</span>    	
+		<img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addCommentForm.commentTextInput.$error.required">	
+		<img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addCommentForm.commentTextInput.$error.required">
 
 	</div>
 

@@ -205,6 +205,8 @@
 	font-family:Helvetica;
 }
 
+
+
 .simpleInputField
 {
 	display: inline-block;
@@ -218,6 +220,22 @@
 .simpleInputField:focus
 {
 	outline: none;
+}
+
+.ngWigInputField 
+{
+
+	display: inline-block;
+	text-indent: 10px;
+
+	font-family:Helvetica;
+	overflow:hidden;
+	resize:none;
+}
+
+.ngWigInputField:focus
+{
+outline: none;
 }
 
 .deepBlueBorder
@@ -248,14 +266,11 @@
 	height: 60px;	
 }
 
-.inputErrorSpan
+.inputErrorIcon
 {
-	display: inline-block;
-	color: rgb(200,0,31);
-	text-indent: 5px;
-	font-size: 13px;
-	font-style: italic;
-	text-decoration: underline;
+	position: absolute;
+	width: 20px;
+	height: 20px;
 }
 
 .spacer10
@@ -279,9 +294,15 @@
 {
 }
 
-.simpleFormView  .ng-invalid{
+.simpleInputField.ng-valid {
+  border: 2px solid rgb(22, 87, 142);
+}
+
+.simpleInputField.ng-invalid {
   border: 2px solid rgb(200,0,31);
 }
+
+
 
 .addPostAuthor
 {
@@ -292,7 +313,7 @@
 .addPostSubject
 {
 	float: left;
-	width: 100%;
+	width: 50%;
 }
 
 .addPostData
@@ -300,5 +321,4 @@
 	float: left;
 	width: 100%;
 }
-
 

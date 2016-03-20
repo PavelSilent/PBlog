@@ -1,10 +1,13 @@
 <form name="addPostForm" class="simpleFormView addPostFormView" novalidate>
-    
+
 	<div class="emptyDiv">
 
-	    <input name="authorInput" class="simpleInputField deepBlueBorder roundBorder addPostAuthor" placeholder="Автор" type="text" ng-model="newPostAuthor" required>
+	    <input name="authorInput" class="simpleInputField deepBlueBorder roundBorder addPostAuthor" placeholder="Автор" type="text" ng-model="newPostAuthor"
+	    	required>
 
-	 	<span class="inputErrorSpan" ng-show="addPostForm.authorInput.$error.required">Укажите автора записи!</span>    	
+	    <img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addPostForm.authorInput.$error.required">
+	    <img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addPostForm.authorInput.$error.required">
+
 
 	</div>
 
@@ -12,19 +15,26 @@
 
 	<div class="emptyDiv">
 
-	    <input name="postSubjectInput" class="simpleInputField deepBlueBorder roundBorder addPostSubject" placeholder="Тема" rows="10" cols="45" ng-model="newPostSubject" required>
+	    <input name="postSubjectInput" class="simpleInputField deepBlueBorder roundBorder addPostSubject" placeholder="Тема" ng-model="newPostSubject" required>
 
-		<span class="inputErrorSpan" ng-show="addPostForm.postSubjectInput.$error.required">Укажите тему записи!</span>    	
+		<img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addPostForm.postSubjectInput.$error.required">	
+		<img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addPostForm.postSubjectInput.$error.required">
 
 	</div>
 
 	<div class="emptyDiv spacer10"></div>
 
-	<div class="emptyDiv">
+	<div class="emptyDiv">		
 
-	    <textarea name="postTextInput" class="simpleInputField deepBlueBorder roundBorder addPostData" placeholder="Начните вводить новую запись..." rows="10" cols="45" ng-model="newPostData" required></textarea>
+	    <textarea id="postTextInputId" name="postTextInput" class="ngWigInputField roundBorder addPostData" 
+	    	ng-class="{'deepBlueBorder':addPostForm.postTextInput.$valid, 'darkRedBorder':addPostForm.postTextInput.$invalid}"
 
-		<span class="inputErrorSpan" ng-show="addPostForm.postTextInput.$error.required">Укажите текст записи!</span>    	
+	    
+	    	ng-wig=''
+	    	placeholder="Начните вводить новую запись..." rows="10" cols="45" ng-model="newPostData" required></textarea>
+
+		<img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addPostForm.postTextInput.$error.required">	
+		<img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addPostForm.postTextInput.$error.required">
 
 	</div>
 
@@ -33,6 +43,3 @@
      </div>
 
 </form>
-
-
-<h1>dddd333</h1>

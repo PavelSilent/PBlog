@@ -1,4 +1,23 @@
-var app = angular.module('blogApp', ['ngRoute']);
+var app = angular.module('blogApp', ['ngRoute', 'ngSanitize', 'ngWig']);
+/*
+app.controller(
+	'appMainController',
+	function ($scope) 
+	{
+       
+
+	}).config(
+		[
+			'ngWigToolbarProvider', 
+			function (ngWigToolbarProvider) 
+			{
+	        	ngWigToolbarProvider.setButtons(['formats', 'list1', 'list2', 'bold', 'italic', 'link']);
+	        	ngWigToolbarProvider.addStandardButton('underline', 'Underline', 'underline', 'fa-underline');
+			}
+		]
+	);*/
+
+
 app.config(
 	function($routeProvider)
 	{
@@ -25,4 +44,7 @@ app.config(
 			.when('/contacts',		{ templateUrl: 'view/contacts.html'})
 			.when('/angular',		{ templateUrl: 'view/angular.html'})
 			.otherwise(				{ template: '<h1>404 Not found</h1>'})
-	});
+	}
+);
+
+     

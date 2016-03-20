@@ -37,3 +37,35 @@ blogApp.directive('clickOutside', function($document)
         }
     }
 });
+
+blogApp.directive("customRequiredText", function()
+{
+    return {
+        restrict: 'AE',
+        link: function (scope, elem, attrs, ctrl )
+        {
+           
+
+
+
+            elem[0].bind('oninvalid', function(e) 
+            {
+                console.log(e);
+
+                e.target.setCustomValidity('Fyll i det här fältet');
+            });
+
+            elem[0].bind('oninput', function(e) 
+            {
+                console.log(e);
+                e.target.setCustomValidity('F;;;;;;;;;;;är fältet');
+            });
+
+     console.log(elem);
+                console.log(elem[0]);
+
+        }
+       
+
+    }
+});
