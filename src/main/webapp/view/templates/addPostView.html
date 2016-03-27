@@ -28,10 +28,8 @@
 
 	    <textarea id="postTextInputId" name="postTextInput" class="ngWigInputField roundBorder addPostData" 
 	    	ng-class="{'deepBlueBorder':addPostForm.postTextInput.$valid, 'darkRedBorder':addPostForm.postTextInput.$invalid}"
-
-	    
-	    	ng-wig=''
-	    	placeholder="Начните вводить новую запись..." rows="10" cols="45" ng-model="newPostData" required></textarea>
+	    	ng-wig='newPostData'
+	    	placeholder="Начните вводить новую запись..." rows="10" cols="45" required></textarea>
 
 		<img src="../assets/img/error_sign.png" class="inputErrorIcon" ng-show="addPostForm.postTextInput.$error.required">	
 		<img src="../assets/img/ok_sign.png" class="inputErrorIcon" ng-hide="addPostForm.postTextInput.$error.required">
@@ -39,7 +37,7 @@
 	</div>
 
 	<div class="emptyDiv">
-		<input type="submit" class="simpleButton deepBlueButton" ng-disabled="addPostForm. $invalid" ng-click="savePost()"
+		<input type="submit" class="simpleButton deepBlueButton" ng-disabled="addPostForm.postTextInput.$invalid || addPostForm.postSubjectInput.$invalid || addPostForm.postTextInputId.$invalid" ng-click="savePost()">
      </div>
 
 </form>
